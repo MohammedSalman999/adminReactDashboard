@@ -8,6 +8,7 @@ import Task from "../models/taskModels.js";
 export const getAdminDashboard = asyncHandler(async (req, res) => {
   //step 1 URL se userId nikal rahe hain (id li user parama se)
   const { userId } = req.params;
+  console.log(userId);
 
   //step -2 Check karte hain ki user admin hai ya nahi (us user id ko mongo me search kiya)
   const user = await User.findById(userId);
