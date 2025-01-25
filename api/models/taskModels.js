@@ -12,7 +12,6 @@ const taskSchema = new Schema(
       required: true,
       trim: true,
     },
-
     owner_phone: {
       type: String,
       required: true,
@@ -26,11 +25,16 @@ const taskSchema = new Schema(
       type: String,
       required: true,
     },
-
+    photo1: {
+      type: String,
+    },
     assignedTo: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
       required: true,
+    },
+    name: {
+      type: String,
     },
   },
   { timestamps: true }

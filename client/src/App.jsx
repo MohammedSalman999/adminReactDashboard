@@ -10,7 +10,7 @@ import ModeratorDashboardCancelled from "./pages/Moderator.Dashboard.Cancelled";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ModeratorDashboardCompleted from "./pages/Moderator.Dashboard.Completed";
-import ModeratorDashboardAssigne from "./pages/Moderator.Dashboard.Assign";
+import ModeratorDashboardAssign from "./pages/Moderator.Dashboard.Assign";
 function App() {
   return (
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
@@ -23,7 +23,7 @@ function App() {
             <Route path="/user/:id" element={<UserDashBoardPage />} />
             <Route path="/admin/:id" element={<AdminDashBoardPage />} />
             <Route path="/moderator/:id" element={<ModeratorDashBoardPage />}>
-              <Route index element={<ModeratorDashboardAssigne />} />
+              <Route index element={<ModeratorDashboardAssign />} />
               <Route
                 path="complete"
                 element={<ModeratorDashboardCompleted />}
